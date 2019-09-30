@@ -19,15 +19,11 @@
              view="root-view"
              viewid=""/>
     <!--=======================================================-->
-    <COMMAND name="debug"
-             help="Change to the debug mode"
-             view="debug-view">
-       <ACTION>echo "Entering debug mode..."</ACTION>
+    <COMMAND name="omci"
+             help="Change to the omci level"
+             view="omci-view">
+       <ACTION>echo "Entering omci mode..."</ACTION>
     </COMMAND>
-    <!--=======================================================-->
-    <COMMAND name="script"
-             help="Change to the script demo mode"
-             view="script-view"/>
     <!--=======================================================-->
     <COMMAND name="history"
              help="Display the current session's command line history">

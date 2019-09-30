@@ -639,11 +639,9 @@ EXTRA_DIST = bin/module.am clish/module.am lub/module.am \
 	lubheap/vxworks/memShow.c lubheap/vxworks/private.h \
 	tinyrl/history/module.am tinyrl/vt100/module.am tinyrl/README \
 	tinyxml/changes.txt tinyxml/readme.txt tinyxml/README \
-	xml-examples/clock.xml xml-examples/debug-commands.xml \
-	xml-examples/debug-view.xml xml-examples/global-commands.xml \
-	xml-examples/named-view.xml xml-examples/network-commands.xml \
-	xml-examples/root-view.xml xml-examples/script-view.xml \
-	xml-examples/script.txt xml-examples/startup.xml \
+	xml-examples/omci-commands.xml \
+	xml-examples/omci-view.xml xml-examples/global-commands.xml \
+	xml-examples/root-view.xml xml-examples/startup.xml \
 	xml-examples/types.xml xml-examples/README
 bin_clish_SOURCES = bin/clish.cpp	
 bin_clish_LDADD = \
