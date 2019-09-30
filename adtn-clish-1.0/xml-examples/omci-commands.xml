@@ -6,17 +6,15 @@
 	<!--=======================================================-->
 
 <VIEW name="omci-view"
-	prompt="omci# ">
+	prompt="omci> ">
 
 	<COMMAND name="show connection"
-		help="Execute show connection"
-		lock="false">
+		help="Execute show connection">
 		<ACTION>exec ifconfig</ACTION>
 	</COMMAND>
 
 	<COMMAND name="show omcc state"
-		help="Execute show omcc state"
-		lock="false">
+		help="Execute show omcc state">
 		<ACTION>exec ps</ACTION>
 	</COMMAND>
 </VIEW>
