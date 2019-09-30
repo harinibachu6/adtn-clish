@@ -4,10 +4,21 @@
  xsi:schemaLocation="http://clish.sourceforge.net/XMLSchema
                      http://clish.sourceforge.net/XMLSchema/clish.xsd">
 	<!--=======================================================-->
-    <COMMAND name="show connection"
-           access="omci"
-             help="Run ifconfig in omci mode">
-        <ACTION>exec ifconfig</ACTION>
-    </COMMAND>
-	<!--=======================================================-->
+
+<VIEW name="omci-view"
+	prompt="omci# ">
+
+	<COMMAND name="show connection"
+		help="Execute show connection"
+		lock="false">
+		<ACTION>exec ifconfig</ACTION>
+	</COMMAND>
+
+	<COMMAND name="show omcc state"
+		help="Execute show omcc state"
+		lock="false">
+		<ACTION>exec ps</ACTION>
+	</COMMAND>
+</VIEW>
+
 </CLISH_MODULE>

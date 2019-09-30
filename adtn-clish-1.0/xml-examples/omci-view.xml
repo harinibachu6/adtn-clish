@@ -4,11 +4,6 @@
  xsi:schemaLocation="http://clish.sourceforge.net/XMLSchema
                      http://clish.sourceforge.net/XMLSchema/clish.xsd">
     <VIEW name="omci-view" prompt="omci> ">
-        <COMMAND name="show connection"
-                 help="Run ifconfig in omci view">
-            <ACTION>exec ifconfig</ACTION>
-        </COMMAND>
-
         <COMMAND name="exit"
                  help="Go back to main menu"
                  view="root-view">
