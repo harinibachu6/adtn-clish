@@ -16,7 +16,7 @@
 /*
  * if CLISH_PATH is unset in the environment then this is the value used. 
  */
-const char *default_path = "/etc/clish;";
+const char *default_path = "/etc/clish;~/.clish";
 
 /*-------------------------------------------------------- */
 /* 
