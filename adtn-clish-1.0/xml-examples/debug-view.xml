@@ -3,7 +3,7 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xsi:schemaLocation="http://clish.sourceforge.net/XMLSchema
                      http://clish.sourceforge.net/XMLSchema/clish.xsd">
-    <VIEW name="debug-view" prompt="omci> ">
+    <VIEW name="omci-view" prompt="omci> ">
         <COMMAND name="exit"
                  help="Go back to main menu"
                  view="root-view">

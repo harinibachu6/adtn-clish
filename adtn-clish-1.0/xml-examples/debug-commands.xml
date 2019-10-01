@@ -5,8 +5,7 @@
                      http://clish.sourceforge.net/XMLSchema/clish.xsd">
 	<!--=======================================================-->
 
-<VIEW name="debug-view"
-	prompt="omci> ">
+<VIEW name="omci-view">
 
 	<COMMAND name="show connection"
 		help="Execute show connection">
@@ -17,6 +16,11 @@
 		help="Execute show omcc state">
 		<ACTION>exec ps</ACTION>
 	</COMMAND>
+
+        <COMMAND name="show function"
+                help="Execute show fn">
+                <ACTION builtin="clish_show"></ACTION>
+        </COMMAND>
 </VIEW>
 
 </CLISH_MODULE>

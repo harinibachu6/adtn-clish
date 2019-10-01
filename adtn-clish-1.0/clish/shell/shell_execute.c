@@ -19,7 +19,9 @@ static clish_shell_builtin_fn_t
     clish_overview,
     clish_source,
     clish_source_nostop,
-    clish_history;
+    clish_history,
+    clish_show
+;
 
 static clish_shell_builtin_t clish_cmd_list[] =
 {
@@ -28,8 +30,27 @@ static clish_shell_builtin_t clish_cmd_list[] =
     {"clish_source",        clish_source},
     {"clish_source_nostop", clish_source_nostop},
     {"clish_history",       clish_history},
+    {"clish_show",          clish_show},
     {NULL,NULL}
 };
+
+/*----------------------------------------------------------- */
+/*
+ clish show
+*/
+static bool_t
+clish_show(const clish_shell_t *shell,
+            const lub_argv_t    *argv)
+{
+    /* the exception proves the rule... */
+    clish_shell_t *this = (clish_shell_t *)shell;
+
+    argv = argv; /* not used */
+    printf("clish: Inside C");
+    tinyrl_printf(this->tinyrl,"%s\n",this->overview);
+    return BOOL_TRUE;
+}
+
 /*----------------------------------------------------------- */
 /*
  Terminate the current shell session 
